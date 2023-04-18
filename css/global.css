@@ -34,6 +34,6 @@ img {
   .subtitulo {
     font-size: 4rem;
     text-transform: capitalize;
-    max-width: initial;
+    max-width: initial !important;
   }
 }

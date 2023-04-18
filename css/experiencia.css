@@ -36,13 +36,12 @@
 .xp::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 4px;
-  height: 100%;
+  height: 20px;
   background: linear-gradient(180deg, #22c55e 0%, #1be866 100%);
 }
-
 
 .xp-ano {
   position: absolute;
@@ -114,6 +113,22 @@
     color: #414141;
   }
   .experiencia-texto {
-    font-size
+    font-size: 1.25rem;
+  }
+  .xp-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .xp-ano::before {
+    content: "Ano: ";
+    color: #525252;
+  }
+}
+
+@media (max-width: 400px) {
+  .xp {
+    grid-template-columns: 1fr;
   }
 }
